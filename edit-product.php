@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="row">
         <div class="col-md-8 offset-md-2">
             <h1>Update Product - <?= $product['title'] ?? ''; ?></h1>
-            <form method="POST" action="create-product.php">
+            <form method="POST" action="edit-product.php?id=<?= $id ?>">
                 <div class="form-group">
                     <label for="product_name">Product Name</label>
                     <input type="text" class="form-control" id="product_name" name="product_name" value="<?= $product['title'] ?? ''; ?>" required>
